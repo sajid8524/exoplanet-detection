@@ -1,0 +1,26 @@
+{
+  "preprocessing": {
+    "flatten_window": 101,
+    "sigma": 5.0
+  },
+  "bls": {
+    "min_period": 0.5,
+    "max_period": 15.0,
+    "n_periods": 80,
+    "duration_grid_days": [0.05, 0.075, 0.1, 0.15, 0.2, 0.3],
+    "n_phase_bins": 240
+  },
+  "features": {
+    "global_bins": 301,
+    "local_bins": 101,
+    "local_width_phase": 0.08
+  },
+  "training": {
+    "epochs": 100,
+    "learning_rate": 0.01,
+    "hidden_units": 96,
+    "validation_fraction": 0.2,
+    "seed": 42
+  }
+}
+
